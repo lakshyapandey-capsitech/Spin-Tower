@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
+        Screen.orientation = ScreenOrientation.Portrait;
         Instance = this;
     }
 
@@ -74,7 +75,6 @@ public class GameManager : MonoBehaviour
 
     public void RestartGame()
     {
-        // Debug.Log("restart button clicked");
         SceneManager.LoadScene(SceneManager.GetSceneByName("SpinTowerGame").buildIndex);
     }
 }

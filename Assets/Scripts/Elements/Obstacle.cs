@@ -56,9 +56,8 @@ public class Obstacle : MonoBehaviour
 
                 // skip those which are empty and already danger zone
                 while (foundIdx == emptyElemIdx || dangerElemIndices.Contains(foundIdx));
-                {
-                    dangerElemIndices.Add(foundIdx);
-                }
+
+                dangerElemIndices.Add(foundIdx);
             }
 
             // resetting all elements to safe
